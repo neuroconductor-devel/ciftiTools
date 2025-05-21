@@ -23,3 +23,7 @@
 ^CRAN-SUBMISSION$
 ^doc$
 ^Meta$
+^DESCRIPTION\.bak$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$

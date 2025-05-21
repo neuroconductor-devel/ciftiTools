@@ -2,64 +2,42 @@ Type: Package
 Package: ciftiTools
 Title: Tools for Reading, Writing, Viewing and Manipulating CIFTI Files
 Version: 0.17.4
-Authors@R: c(
-    person(given = "Amanda",
-           family = "Mejia",
-           email = "mandy.mejia@gmail.com",
-           role = c("aut", "cre")),
-    person(given = "Damon",
-           family = "Pham",
-           email = "damondpham@gmail.com",
-           role = c("aut"),
-           comment = c(ORCID = "0000-0001-7563-4727")),
-    person(given = "John",
-           family = "Muschelli",
-           email = "muschellij2@gmail.com",
-           role = c("ctb"),
-           comment = c(ORCID = "0000-0001-6469-1750"))
-    )
+Authors@R: c( person(given = "Amanda", family = "Mejia", email =
+        "mandy.mejia@gmail.com", role = c("aut", "cre")), person(given
+        = "Damon", family = "Pham", email = "damondpham@gmail.com",
+        role = c("aut"), comment = c(ORCID = "0000-0001-7563-4727")),
+        person(given = "John", family = "Muschelli", email =
+        "muschellij2@gmail.com", role = c("ctb"), comment = c(ORCID =
+        "0000-0001-6469-1750")) )
 Maintainer: Amanda Mejia <mandy.mejia@gmail.com>
-Description: CIFTI files contain brain imaging data in "grayordinates," which 
-    represent the gray matter as cortical surface vertices (left and right) and
-    subcortical voxels (cerebellum, basal ganglia, and other deep gray matter). 
-    'ciftiTools' provides a unified environment for reading, writing, 
-    visualizing and manipulating CIFTI-format data. It supports the "dscalar," 
-    "dlabel," and "dtseries" intents. Grayordinate data is read in as a "xifti" 
-    object, which is structured for convenient access to the data and metadata,
-    and includes support for surface geometry files to enable
-    spatially-dependent functionality such as static or interactive 
-    visualizations and smoothing.
+Description: CIFTI files contain brain imaging data in "grayordinates,"
+        which represent the gray matter as cortical surface vertices
+        (left and right) and subcortical voxels (cerebellum, basal
+        ganglia, and other deep gray matter). 'ciftiTools' provides a
+        unified environment for reading, writing, visualizing and
+        manipulating CIFTI-format data. It supports the "dscalar,"
+        "dlabel," and "dtseries" intents. Grayordinate data is read in
+        as a "xifti" object, which is structured for convenient access
+        to the data and metadata, and includes support for surface
+        geometry files to enable spatially-dependent functionality such
+        as static or interactive visualizations and smoothing.
 License: GPL-3
 URL: https://github.com/mandymejia/ciftiTools
 BugReports: https://github.com/mandymejia/ciftiTools/issues
-Depends: 
-    R (>= 3.5.0)
-Imports:
-    fields,
-    gifti (> 0.7.5),
-    grDevices,
-    oro.nifti,
-    RNifti,
-    RColorBrewer,
-    rgl,
-    viridisLite,
-    xml2
-Suggests:
-    covr,
-    ggplot2,
-    ggpubr,
-    grid,
-    gridExtra,
-    htmlwidgets,
-    manipulateWidget,
-    webshot2,
-    knitr,
-    rmarkdown,
-    png,
-    testthat (>= 3.0.0)
-VignetteBuilder:
-    knitr
+Depends: R (>= 3.5.0)
+Imports: fields, gifti (> 0.7.5), grDevices, oro.nifti, RNifti,
+        RColorBrewer, rgl, viridisLite, xml2
+Suggests: covr, ggplot2, ggpubr, grid, gridExtra, htmlwidgets,
+        manipulateWidget, webshot2, knitr, rmarkdown, png, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Language: en-US
+Repository: Neuroconductor-Devel
+Remotes: 
+    neuroconductor-devel/RNifti@b01b7073b6d5d9ff6252ccd004da27d6c2d7cb56,
+    neuroconductor-devel/gifti@bf5a82f039b9def04af40f9951c2776ca37f4ca6,
+    neuroconductor-devel/oro.nifti@517ce5312094bf1ecee49bd09024769d3e5d2daa
+biocViews: 
